@@ -81,18 +81,19 @@ a:hover, a:active {
 
 .container {
     display: flex;
-    flex-wrap: nowrap; 
-    align-items: flex-start; 
+    flex-wrap: nowrap; /* Prevent wrapping initially */
+    align-items: flex-start; /* Align items at the start */
 }
 
 @media (max-width: 1325px) {
     .container {
         flex-direction: column;
-        align-items: center; 
+        align-items: center; /* Center items in column layout */
+    }
 
     .castle-image img {
-        margin-left: 0;
-        margin-top: 20px; 
+        margin-left: 0; /* Center the image */
+        margin-top: 20px; /* Adjust margin-top to move image below text */
     }
 
     .small-bottom {
@@ -125,12 +126,12 @@ a:hover, a:active {
 @media (max-width: 1325px) {
     .container {
         flex-direction: column;
-        align-items: center; 
+        align-items: center; /* Center items in column layout */
     }
 
     .bumper-image img {
-        margin-left: 0; 
-        margin-top: 20px; 
+        margin-left: 0; /* Center the image */
+        margin-top: 20px; /* Adjust margin-top to move image below text */
     }
 }
 
@@ -142,10 +143,10 @@ a:hover, a:active {
 }
 
 .personal-blurb a {
-    color: rgb(87, 29, 29); 
-    text-decoration: underline; 
-    font-weight: 500; 
-    transition: color 0.3s ease; 
+    color: rgb(87, 29, 29); /* Color for hyperlinks */
+    text-decoration: underline; /* Underline for hyperlinks */
+    font-weight: 500; /* Font weight for hyperlinks */
+    transition: color 0.3s ease; /* Smooth color transition for hover */
 }
 
 .personal-blurb a:hover {
@@ -155,6 +156,3 @@ a:hover, a:active {
 .contact-item {
     margin-right: 80px;
 }
-
-
-
